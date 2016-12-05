@@ -34,13 +34,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from datetime import datetime
 import math
 import time
+from datetime import datetime
 
 import numpy as np
-import tensorflow as tf
 
+import tensorflow as tf
 from tensorflow.models.image.cifar10 import cifar10
 
 FLAGS = tf.app.flags.FLAGS
@@ -56,7 +56,7 @@ tf.app.flags.DEFINE_integer('eval_interval_secs', 60 * 5,
 tf.app.flags.DEFINE_integer('num_examples', 10000,
                             """Number of examples to run.""")
 tf.app.flags.DEFINE_boolean('run_once', False,
-                         """Whether to run eval only once.""")
+                            """Whether to run eval only once.""")
 
 
 def eval_once(saver, summary_writer, top_k_op, summary_op):
@@ -129,7 +129,7 @@ def evaluate():
 
     # Restore the moving average version of the learned variables for eval.
     variable_averages = tf.train.ExponentialMovingAverage(
-        cifar10.MOVING_AVERAGE_DECAY)
+      cifar10.MOVING_AVERAGE_DECAY)
     variables_to_restore = variable_averages.variables_to_restore()
     saver = tf.train.Saver(variables_to_restore)
 
