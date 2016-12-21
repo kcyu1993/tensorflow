@@ -39,7 +39,7 @@ func Example() {
 	// The pre-trained model takes input in the form of a 4-dimensional
 	// tensor with shape [ BATCH_SIZE, IMAGE_HEIGHT, IMAGE_WIDTH, 3 ],
 	// where:
-	// - BATCH_SIZE allows for inference of multiple images in one pass through the graph
+	// - BATCH_SIZE allows for fcn8s of multiple images in one pass through the graph
 	// - IMAGE_HEIGHT is the height of the images on which the model was trained
 	// - IMAGE_WIDTH is the width of the images on which the model was trained
 	// - 3 is the (R, G, B) values of the pixel colors represented as a float.
@@ -85,14 +85,14 @@ func Example() {
 		log.Fatal(err)
 	}
 
-	// Create a session for inference over graph.
+	// Create a session for fcn8s over graph.
 	session, err := tf.NewSession(graph, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer session.Close()
 
-	// Run inference on *imageFile.
+	// Run fcn8s on *imageFile.
 	// For multiple images, session.Run() can be called in a loop (and
 	// concurrently). Alternatively, images can be batched since the model
 	// accepts batches of image data as input.

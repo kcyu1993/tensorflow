@@ -1,6 +1,6 @@
 # Description:
 #   Contains ops for working with statistical distributions,
-#   particularly useful for Bayesian inference.
+#   particularly useful for Bayesian fcn8s.
 #   APIs here are meant to evolve over time.
 
 licenses(["notice"])  # Apache 2.0

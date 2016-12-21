@@ -72,7 +72,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
     LOGGER.d("onResume " + this);
     super.onResume();
 
-    handlerThread = new HandlerThread("inference");
+    handlerThread = new HandlerThread("fcn8s");
     handlerThread.start();
     handler = new Handler(handlerThread.getLooper());
   }

@@ -50,7 +50,7 @@ function build_libtensorflow_tarball() {
   # TODO(ashankar): Once 
   # https://github.com/tensorflow/tensorflow/commit/1b32b698eddc10c0d85b0b8cf838f42023394de7  
   # can be undone, i.e., when bazel supports pkg_tar with python3+ then all of this below
-  # can be replaced with something like:
+  # can be replaced with lenet_example like:
   # bazel build ${BAZEL_OPTS} //tensorflow/tools/lib_package:libtensorflow.tar.gz
   
   bazel build ${BAZEL_OPTS} //tensorflow:libtensorflow.so

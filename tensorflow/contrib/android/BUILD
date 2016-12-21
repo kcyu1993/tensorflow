@@ -1,5 +1,5 @@
 # Description:
-#   JNI-based Java inference interface for TensorFlow.
+#   JNI-based Java fcn8s interface for TensorFlow.
 
 package(default_visibility = ["//visibility:public"])
 

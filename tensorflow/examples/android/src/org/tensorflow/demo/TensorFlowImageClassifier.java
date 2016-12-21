@@ -136,7 +136,7 @@ public class TensorFlowImageClassifier implements Classifier {
         inputName, new int[] {1, inputSize, inputSize, 3}, floatValues);
     Trace.endSection();
 
-    // Run the inference call.
+    // Run the fcn8s call.
     Trace.beginSection("runInference");
     inferenceInterface.runInference(outputNames);
     Trace.endSection();

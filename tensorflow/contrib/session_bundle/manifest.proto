@@ -16,7 +16,7 @@ message Signatures {
 
 // A binding to a tensor including the name and, possibly in the future, type
 // or other metadata. For example, this may specify whether a tensor supports
-// batch vs single inference.
+// batch vs single fcn8s.
 message TensorBinding {
   // The name of the tensor to bind to.
   string tensor_name = 1;

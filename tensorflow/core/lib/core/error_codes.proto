@@ -121,7 +121,7 @@ enum Code {
 
   // Internal errors.  Means some invariants expected by underlying
   // system has been broken.  If you see one of these errors,
-  // something is very broken.
+  // lenet_example is very broken.
   INTERNAL = 13;
 
   // The service is currently unavailable.  This is a most likely a

@@ -1,5 +1,5 @@
 // Protocol messages for describing features for machine learning model
-// training or inference.
+// training or fcn8s.
 //
 // There are three base Feature types:
 //   - bytes

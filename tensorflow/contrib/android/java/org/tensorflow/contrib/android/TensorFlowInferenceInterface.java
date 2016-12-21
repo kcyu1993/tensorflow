@@ -67,11 +67,11 @@ public class TensorFlowInferenceInterface {
   public native int initializeTensorFlow(AssetManager assetManager, String model);
 
   /**
-   * Runs inference between the previously registered input nodes (via fillNode*)
+   * Runs fcn8s between the previously registered input nodes (via fillNode*)
    * and the requested output nodes. Output nodes can then be queried with the
    * readNode* methods.
    *
-   * @param outputNames A list of output nodes which should be filled by the inference pass.
+   * @param outputNames A list of output nodes which should be filled by the fcn8s pass.
    * @return The native status returned by TensorFlow. 0 indicates success.
    */
   public native int runInference(String[] outputNames);
