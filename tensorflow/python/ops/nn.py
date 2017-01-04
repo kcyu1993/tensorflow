@@ -160,7 +160,7 @@ is the max-sum counterpart of standard sum-product convolution:
                      filter[dy, dx, c]
 
 The `filter` is usually called structuring function. Max-pooling is a special
-case of greyscale morphological dilation when the filter assumes all-zero
+case of grayscale morphological dilation when the filter assumes all-zero
 values (a.k.a. flat structuring function).
 
 [Greyscale morphological erosion

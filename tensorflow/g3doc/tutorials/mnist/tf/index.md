@@ -30,7 +30,7 @@ python fully_connected_feed.py
 ## Prepare the Data
 
 MNIST is a classic problem in machine learning. The problem is to look at
-greyscale 28x28 pixel images of handwritten digits and determine which digit
+grayscale 28x28 pixel images of handwritten digits and determine which digit
 the image represents, for all the digits from zero to nine.
 
 ![MNIST Digits](../../../images/mnist_digits.png "MNIST Digits")
